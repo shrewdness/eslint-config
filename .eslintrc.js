@@ -1,0 +1,30 @@
+module.exports = {
+  env: {
+    node: true,
+  },
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint", "prettier"],
+  extends: [
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
+  ],
+  rules: {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "import/prefer-default-export": "off",
+    "class-methods-use-this": "off",
+    "import/no-cycle": "off",
+    "no-param-reassign": "off",
+    "no-await-in-loop": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "consistent-return": "off",
+  },
+};
